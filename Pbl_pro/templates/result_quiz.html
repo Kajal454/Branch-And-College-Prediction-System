@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Result Page</title>
+</head>
+<style>
+  h1{
+    text-align: center;
+    font-size: large;
+    color: black;
+  }
+  h2{
+    text-align: center;
+    font-size: large;
+    color: black;
+  }
+  .res{
+    background-color: aquamarine;
+  }
+</style>
+<!-- <style>
+    footer {
+    position:relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: hsl(243, 87%, 12%);
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+    /* footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: hsl(243, 87%, 12%);
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  } */
+    footer {
+      background-color: hsl(243, 87%, 12%);
+      color: #fff;
+      padding: 50px 0;
+  }
+  
+  footer ul {
+      list-style-type: none;
+  }
+  
+  footer ul li {
+      margin-bottom: 20px;
+  }
+  
+  footer .social-media {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  footer .circle {
+      border: 1px solid #fff;
+      border-radius: 50%;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      height: 40px;
+      width: 40px;
+      text-decoration: none;
+  }
+  
+  footer p {
+      text-align: right;
+  }
+    
+  /*   
+    footer {
+      
+      align-self:flex-end;
+      text-align: center;
+      padding:0%;
+      background-color:transparent;
+      color: white;
+    } */
+  </style> -->
+<body>
+    <div ><h1>Your branch is {{ branch }}</h1></div>
+    {% if branch=="Computer Engineering"%}
+    <style>
+    body{
+      background-image:url("css/a13.jpg");
+    }
+    </style>
+    <DIV>
+      <h2> <a href="{{url_for('comp')}}"> COMP </a> </h2>
+    </DIV>
+    <div>
+      <h1>Get Your College according to Your Branch </h1>
+      <h2> <a href="{{url_for('mlmodel')}}"> Get</a> </h2>
+    </div>
+    {% elif branch=="Electronics and Telecommunication Engineering" %}
+    <style>
+      body{
+        background-color:aquamarine;
+      }
+      </style>
+    
+    <DIV>
+      <h2> <a href="{{url_for('entc')}}"> entc </a> </h2>
+    </DIV><div>
+      <h1>Get Your College according to Your Branch </h1>
+      <h2> <a href="{{url_for('mlmodel')}}"> Get</a> </h2>
+    </div>
+
+    {% elif branch=="Mechanical Engineering" %}
+    <style>
+      body{
+        background-color:gold;
+      }
+      </style>
+    <DIV>
+      <h2> <a href="{{url_for('mech')}}"> mech</a> </h2>
+    </DIV>
+    <div>
+      <h1>Get Your College according to Your Branch </h1>
+      <h2> <a href="{{url_for('mlmodel')}}"> Get</a> </h2>
+    </div>
+    {% elif branch=="Civil Engineering" %}
+    <style>
+      body{
+        background-color:aliceblue;
+      }
+      </style>
+    <DIV>
+      <h2> <a href="{{url_for('civil')}}"> civil </a> </h2>
+    </DIV>
+    <div>
+      <h1>Get Your College according to Your Branch </h1>
+      <h2> <a href="{{url_for('mlmodel')}}"> Get</a> </h2>
+    </div>
+    {% endif %}
+    <!-- <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    
+    <div>    <footer>
+        <div class="container">
+          <img src="./images/logo white.svg" alt="logo" />
+  
+          <div class="flex align-start">
+            <ul>
+              <li>
+                +1-543-123-4567
+              </li>
+              <li>
+                example@huddle.com
+              </li>
+            </ul>
+            <ul>
+              <li>
+                About Us
+              </li>
+              <li>
+                Jobs
+              </li>
+              <li>
+                Press
+              </li>
+              <li>
+                Blog
+              </li>
+            </ul>
+  
+            <ul>
+              <li>
+                Career
+              </li>
+              <li>
+                Terms
+              </li>
+              <li>
+                Privacy
+              </li>
+            </ul>
+  
+            <ul class="social-media">
+              <li>
+                <a class="circle" href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a class="circle" href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a class="circle" href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div> -->
+
+</body>
+</html>

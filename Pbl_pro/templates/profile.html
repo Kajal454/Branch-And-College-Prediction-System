@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/Profile.css')}}">
+
+
+</head>
+
+<body>
+
+    <!-- <fieldset> -->
+    <!-- <img src="img_avatar2.png"> -->
+    <!-- <img src="static/css/images/avatar.svg"> -->
+    <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;"></p>
+    <p><label for="file" style="cursor: pointer;">Upload image</label></p>
+    <p><img id="output" width="200" /></p>
+
+<script>
+    var loadFile = function (event) {
+        var image = document.getElementById('output');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
+</script>
+
+    <form>  
+        <p>Profile</p>
+
+        <b>First Name: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</b><input type="text" placeholder="First name" maxlength="100" id="a"><br><br>
+        <b> Last Name:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</b><input type="text" placeholder="Last name" maxlength="10" id="a"><br><br>
+
+	    <b>Mobile number:  &nbsp; &nbsp;</b><input type="number" placeholder=" Enter Mobile number" id="a" maxlength="10"><br><br>
+
+	    <b>Email ID:  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><input type="text" placeholder="Enter email id" name="{{usid}}" id="a">{{usid}}<br></br>
+        <b>CET Percentile:  &nbsp; &nbsp; &nbsp;</b><input type="number" placeholder="Enter percentile" id="a"><br></br>
+
+        <b>Adderess Line 1:  &nbsp; &nbsp;</b><input type="text" placeholder="Enter address line1" id="a"><br></br>
+        <b>Adderess Line 2:  &nbsp; &nbsp;</b><input type="text" placeholder="Enter address line2" id="a"><br></br>
+        <b>Postcode:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</b><input type="Number" placeholder="Pin" id="a"><br></br>
+        <b>State:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</b><input type="text"placeholder="State"  id="a"><br></br>
+        <b>Country:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</b><input type="text" placeholder="Country" id="a"><br></br>
+
+        <b>Education:     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</b><input type="text" placeholder="Education" id="a"><br></br>
+        <button id="b">Save Profile</button>
+
+        <!-- <button id="b" onclick="onku()">Save Profile</button> -->
+
+	    
+    </form>
+    <!-- </fieldset> -->
+</body>
+</html>

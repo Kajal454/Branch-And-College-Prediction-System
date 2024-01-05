@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz-final.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/quiz-final.css')}}">
+    <title>Questions</title>
+</head>
+
+<body>
+    <!--QUIZ-QUESTION-->
+
+    <div class="wrapper">
+        <div class="quiz">
+            <div class="quiz_header">
+                <div class="quiz_user">
+                    <h4>WELCOME ! <span class="name"></span></h4>
+                </div>
+            </div>
+
+            <div class="quiz_body">
+                <div id="questions">
+
+<form method="POST" action="/quiz">
+		<div class="question">
+			<p>Are you interested in computers and coding languages?</p>
+			<label><input type="radio" name="q1" value="4">Excellent</label><br>
+			<label><input type="radio" name="q1" value="3">Intermediate</label><br>
+			<label><input type="radio" name="q1" value="2">Average</label><br>
+			<label><input type="radio" name="q1" value="1">Poor</label><br>
+		</div>
+		<div class="question">
+			<p>Do you enjoy problem-solving and critical thinking?</p>
+			<label><input type="radio" name="q2" value="4">Excellent</label><br>
+			<label><input type="radio" name="q2" value="3">Intermediate</label><br>
+			<label><input type="radio" name="q2" value="2">Average</label><br>
+			<label><input type="radio" name="q2" value="1">Poor</label><br>
+		</div>
+		<div class="question">
+			<p>Are you intrested in designing graphics and animation</p>
+			<label><input type="radio" name="q3" value="4">Excellent</label><br>
+			<label><input type="radio" name="q3" value="3">Intermediate</label><br>
+			<label><input type="radio" name="q3" value="2">Average</label><br>
+			<label><input type="radio" name="q3" value="1">Poor</label><br>
+		</div>
+		<div class="question">
+			<p>Are you intrested in making various websites similar to those on the browser?</p>
+			<label><input type="radio" name="q4" value="4">Excellent</label><br>
+			<label><input type="radio" name="q4" value="3">Intermediate</label><br>
+			<label><input type="radio" name="q4" value="2">Average</label><br>
+			<label><input type="radio" name="q4" value="1">Poor</label><br>
+		</div>
+		<div class="question">
+			<p>Do you have an interest in how apps on android and IOS are made?</p>
+			<label><input type="radio" name="q5" value="4">Excellent</label><br>
+			<label><input type="radio" name="q5" value="3">Intermediate</label><br>
+			<label><input type="radio" name="q5" value="2">Average</label><br>
+			<label><input type="radio" name="q5" value="1">Poor</label><br>
+		</div>
+		<div class="question">
+			<p>Do you have a strong interest in electronics and communication systems?</p>
+			<label><input type="radio" name="q6" value="4">Excellent</label><br>
+			<label><input type="radio" name="q6" value="3">Intermediate</label><br>
+			<label><input type="radio" name="q6" value="2">Average</label><br>
+			<label><input type="radio" name="q6" value="1">Poor</label><br>
+		</div>
+		<div class="question">
+			<p>Are you interested in learning about signal processing and control systems? </p>
+			<label><input type="radio" name="q7" value="4">Excellent</label><br>
+			<label><input type="radio" name="q7" value="3">Intermediate</label><br>
+			<label><input type="radio" name="q7" value="2">Average</label><br>
+			<label><input type="radio" name="q7" value="1">Poor</label><br>
+		</div>
+		<div class="question">
+			<p>Do you have an interest in embedded systems and robotics?</p>
+			<label><input type="radio" name="q8" value="4">Excellent</label><br>
+			<label><input type="radio" name="q8" value="3">Intermediate</label><br>
+			<label><input type="radio" name="q8" value="2">Average</label><br>
+			<label><input type="radio" name="q8" value="1">Poor</label><br>
+		</div>
+		<div class="question">
+			<p>Do you enjoy working with electronic components and circuit design?</p>
+			<label><input type="radio" name="q9" value="4">Excellent</label><br>
+			<label><input type="radio" name="q9" value="3">Intermediate</label><br>
+			<label><input type="radio" name="q9" value="2">Average</label><br>
+			<label><input type="radio" name="q9" value="1">Poor</label><br>
+		</div>
+		<div class="question">
+			<p>Are you interested in research and development in the field of telecommunications?</p>
+			<label><input type="radio" name="q10" value="4">Excellent</label><br>
+			<label><input type="radio" name="q10" value="3">Intermediate</label><br>
+			<label><input type="radio" name="q10" value="2">Average</label><br>
+			<label><input type="radio" name="q10" value="1">Poor</label><br>
+		</div>
+		<div class="question">
+			<p>Are you interested in learning in depth about various structures developed around us?</p>
+			<label><input type="radio" name="q11" value="4">Excellent</label><br>
+			<label><input type="radio" name="q11" value="3">Intermediate</label><br>
+			<label><input type="radio" name="q11" value="2">Average</label><br>
+			<label><input type="radio" name="q11" value="1">Poor</label><br>
+		</div>
+		<div class="question">
+			<p>Do you have a keen interest in knowing about materials essential for designing buildings</p>
+			<label><input type="radio" name="q12" value="4">Excellent</label><br>
+			<label><input type="radio" name="q12" value="3">Intermediate</label><br>
+			<label><input type="radio" name="q12" value="2">Average</label><br>
+			<label><input type="radio" name="q12" value="1">Poor</label><br>
+		</div>
+		<div class="question">
+			<p>Are you eager to develop rural areas by providing infrastructure ?</p>
+			<label><input type="radio" name="q13" value="4">Excellent</label><br>
+			<label><input type="radio" name="q13" value="3">Intermediate</label><br>
+			<label><input type="radio" name="q13" value="2">Average</label><br>
+			<label><input type="radio" name="q13" value="1">Poor</label><br>
+		</div>
+		<div class="question">
+			<p>Do you like drawing layouts of bridges,roads?</p>
+			<label><input type="radio" name="q14" value="4">Excellent</label><br>
+			<label><input type="radio" name="q14" value="3">Intermediate</label><br>
+			<label><input type="radio" name="q14" value="2">Average</label><br>
+			<label><input type="radio" name="q14" value="1">Poor</label><br>
+		</div>
+		<div class="question">
+			<p>Do you have a keen interest in knowing about materials essential for designing buildings</p>
+			<label><input type="radio" name="q15" value="4">Excellent</label><br>
+			<label><input type="radio" name="q15" value="3">Intermediate</label><br>
+			<label><input type="radio" name="q15" value="2">Average</label><br>
+			<label><input type="radio" name="q15" value="1">Poor</label><br>
+		</div>
+		<div class="question">
+			<p>Are you interested in pursuing a career in industries such as manufacturing, aerospace, automotive, or energy?</p>
+			<label><input type="radio" name="q16" value="4">Excellent</label><br>
+			<label><input type="radio" name="q16" value="3">Intermediate</label><br>
+			<label><input type="radio" name="q16" value="2">Average</label><br>
+			<label><input type="radio" name="q16" value="1">Poor</label><br>
+		</div>
+		<div class="question">
+			<p>CAre you interested in the latest advancements in energy systems, such as renewable energy and electric vehicles?:</p>
+			<label><input type="radio" name="q17" value="4">Excellent</label><br>
+			<label><input type="radio" name="q17" value="3">Intermediate</label><br>
+			<label><input type="radio" name="q17" value="2">Average</label><br>
+			<label><input type="radio" name="q17" value="1">Poor</label><br>
+		</div>
+		<div class="question">
+			<p>Do you enjoy contributing in the devlopement of new machines?</p>
+			<label><input type="radio" name="q18" value="4">Excellent</label><br>
+			<label><input type="radio" name="q18" value="3">Intermediate</label><br>
+			<label><input type="radio" name="q18" value="2">Average</label><br>
+			<label><input type="radio" name="q18" value="1">Poor</label><br>
+		</div>
+		<div class="question">
+			<p>Do you enjoy building or repairing things, such as machines, gadgets, or vehicles?</p>
+			<label><input type="radio" name="q19" value="4">Excellent</label><br>
+			<label><input type="radio" name="q19" value="3">Intermediate</label><br>
+			<label><input type="radio" name="q19" value="2">Average</label><br>
+			<label><input type="radio" name="q19" value="1">Poor</label><br>
+		</div>
+		<div class="question">
+			<p>Are you interested in understanding how machines work and how they can be improved?</p>
+			<label><input type="radio" name="q20" value="4">Excellent</label><br>
+			<label><input type="radio" name="q20" value="3">Intermediate</label><br>
+			<label><input type="radio" name="q20" value="2">Average</label><br>
+			<label><input type="radio" name="q20" value="1">Poor</label><br>
+		</div>
+		<button type="submit">Submit</button>
+	</form>
+                </div>
+
+                <button  class="btn-next" onclick="next()">Next Question</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="quiz.js"></script>
+    <script src="userinfo.js"></script> -->
+    <script>
+         function next() {
+
+if (question_count == questions.length - 1) {
+    location.href = "final.html";
+}
+console.log(question_count);
+
+
+let user_answer = document.querySelector("li.option.active").innerHTML;
+
+if (user_answer == questions[question_count].answer) {
+    points += 10;
+    sessionStorage.setItem("points", points);
+}
+console.log(points);
+
+question_count++;
+show(question_count);
+}
+</script>
+<script>
+        let user_name = sessionStorage.getItem("name");
+        let user_points = sessionStorage.getItem("points");
+
+        document.querySelector("span.name").innerHTML = user_name;
+        document.querySelector("span.points").innerHTML = user_points;
+    </script>
+    <!-- <script>
+        let questions = [
+            {
+                id: 1,
+                question: "Are you interested in computers and coding languages?",
+                answer: "Random Access Memory",
+                options: [
+                    "Excellent",
+                    "Intermediate",
+                    "Average",
+                    "Poor"
+                ]
+            },
+            {
+                id: 2,
+                question: "Do you enjoy problem-solving and critical thinking?",
+                answer: "Central Processing Unit",
+                options: [
+                    "Excellent",
+                    "Intermediate",
+                    "Average",
+                    "Poor"
+                ]
+            },
+            {
+                id: 3,
+                question: "Are you intrested in designing graphics and animation",
+                answer: "Electronic Mail",
+                options: [
+                    "Excellent",
+                    "Intermediate",
+                    "Average",
+                    "Poor"
+                ]
+            },
+            {
+                id: 4,
+                question: "Are you intrested in making various websites similar to those on the browser?",
+                answer: "DataBase",
+                options: [
+                    "Excellent",
+                    "Intermediate",
+                    "Average",
+                    "Poor"
+                ]
+            },
+            {
+                id: 5,
+                question: "Do you have an interest in how apps on android and IOS are made?",
+                answer: "Fluorescent Multi-Layer Disc",
+                options: [
+                    "Excellent",
+                    "Intermediate",
+                    "Average",
+                    "Poor"
+                ]
+            },
+            {
+                id: 6,
+                question: "Do you have a strong interest in electronics and communication systems?",
+                answer: "8",
+                options: [
+                    "Excellent",
+                    "Intermediate",
+                    "Average",
+                    "Poor"
+                ]
+            },
+            {
+                id: 7,
+                question: "Are you interested in learning about signal processing and control systems? ",
+                answer: "A format for an image file",
+                options: [
+                    "Excellent",
+                    "Intermediate",
+                    "Average",
+                    "Poor"
+                ]
+            },
+            {
+                id: 8,
+                question: "Do you enjoy working with electronic components and circuit design? ",
+                answer: "ENIAC",
+                options: [
+                    "Excellent",
+                    "Intermediate",
+                    "Average",
+                    "Poor"
+                ]
+            },
+            {
+                id: 9,
+                question: "Do you have an interest in embedded systems and robotics?",
+                answer: "Mother board",
+                options: [
+                    "Excellent",
+                    "Intermediate",
+                    "Average",
+                    "Poor"
+                ]
+            },
+            {
+                id: 10,
+                question: "Are you interested in research and development in the field of telecommunications? ",
+                answer: "Internet Service Provider",
+                options: [
+                    "Excellent",
+                    "Intermediate",
+                    "Average",
+                    "Poor"
+
+                ]
+            },
+            {
+                id: 11,
+                question: "Are you interested in learning in depth about various structures developed around us?",
+                answer: "",
+                options: [
+                    "Excellent",
+                    "Intermediate",
+                    "Average",
+                    "Poor"
+
+                ]
+            },
+            {
+                id: 12,
+                question: "Do you have a keen interest in knowing about materials essential for designing buildings ",
+                answer: "Internet Service Provider",
+                options: [
+                    "Excellent",
+                    "Intermediate",
+                    "Average",
+                    "Poor"
+
+                ]
+            },
+            {
+                id: 13,
+                question: "Are you eager to develop rural areas by providing infrastructure ?",
+                answer: "Internet Service Provider",
+                options: [
+                    "Excellent",
+                    "Intermediate",
+                    "Average",
+                    "Poor"
+
+                ]
+            },
+            {
+                id: 14,
+                question: "Do you like drawing layouts of bridges,roads?",
+                answer: "Internet Service Provider",
+                options: [
+                    "Excellent",
+                    "Intermediate",
+                    "Average",
+                    "Poor"
+
+                ]
+            },
+            {
+                id: 15,
+                question: "Do you have a keen interest in knowing about materials essential for designing buildings",
+                answer: "Internet Service Provider",
+                options: [
+                    "Excellent",
+                    "Intermediate",
+                    "Average",
+                    "Poor"
+
+                ]
+            },
+            {
+                id: 16,
+                question: "Are you interested in pursuing a career in industries such as manufacturing, aerospace, automotive, or energy?",
+                answer: "Internet Service Provider",
+                options: [
+                    "Excellent",
+                    "Intermediate",
+                    "Average",
+                    "Poor"
+
+                ]
+            },
+            {
+                id: 17,
+                question: " Are you interested in the latest advancements in energy systems, such as renewable energy and electric vehicles?",
+                answer: "Internet Service Provider",
+                options: [
+                    "Excellent",
+                    "Intermediate",
+                    "Average",
+                    "Poor"
+
+                ]
+            },
+            {
+                id: 18,
+                question: "Do you enjoy contributing in the devlopement of new machines?",
+                answer: "Internet Service Provider",
+                options: [
+                    "Excellent",
+                    "Intermediate",
+                    "Average",
+                    "Poor"
+
+                ]
+            },
+            {
+                id: 19,
+                question: " Do you enjoy building or repairing things, such as machines, gadgets, or vehicles?",
+                answer: "Internet Service Provider",
+                options: [
+                    "Excellent",
+                    "Intermediate",
+                    "Average",
+                    "Poor"
+
+                ]
+            },
+            {
+                id: 20,
+                question: "Are you interested in understanding how machines work and how they can be improved?",
+                answer: "Internet Service Provider",
+                options: [
+                    "Excellent",
+                    "Intermediate",
+                    "Average",
+                    "Poor"
+
+                ]
+            },
+
+        ];
+
+        let question_count = 0;
+        let points = 0;
+
+
+        window.onload = function () {
+            show(question_count);
+        };
+
+        function show(count) {
+            let question = document.getElementById("questions");
+            let [first, second, third, fourth] = questions[count].options;
+
+            question.innerHTML = `<h2>Q${count + 1}. ${questions[count].question}</h2>
+    <ul class="option_group">
+    <li class="option">${first}</li>
+    <li class="option">${second}</li>
+    <li class="option">${third}</li>
+    <li class="option">${fourth}</li>
+    </ul>`;
+            toggleActive();
+        }
+
+        function toggleActive() {
+            let option = document.querySelectorAll("li.option");
+            for (let i = 0; i < option.length; i++) {
+                option[i].onclick = function () {
+                    for (let i = 0; i < option.length; i++) {
+                        if (option[i].classList.contains("active")) {
+                            option[i].classList.remove("active");
+                        }
+                    }
+                    option[i].classList.add("active");
+                }
+            }
+        }
+
+        function next() {
+
+            if (question_count == questions.length - 1) {
+                location.href = "final.html";
+            }
+            console.log(question_count);
+
+
+            let user_answer = document.querySelector("li.option.active").innerHTML;
+
+            if (user_answer == questions[question_count].answer) {
+                points += 10;
+                sessionStorage.setItem("points", points);
+            }
+            console.log(points);
+
+            question_count++;
+            show(question_count);
+        }
+    </script> -->
+</body>
+
+</html>

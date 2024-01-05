@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Predicted College</title>
+</head>
+<body>
+    <h1>Predicted College</h1>
+    <p>The best college for you is: {{ branch }}</p>
+    <h2>Recommended Colleges</h2>
+    <ul>
+        {% for college in recommended_colleges %}
+        <li>{{ branch }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

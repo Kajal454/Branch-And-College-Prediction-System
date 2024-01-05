@@ -1,0 +1,52 @@
+
+<html>
+<head>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+    </style>
+
+    <title>Predict Your College</title>
+</head>
+<body>
+    <h1>Predict Your College</h1>
+    <form action="/predict" method="post">
+        CET Marks: <input type="text" name="cet_marks"><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>

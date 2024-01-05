@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+		<link rel="stylesheet" href="{{url_for('static',filename='css/feature.css')}}">
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="static/css/images/favicon-32x32.png"
+		/>
+
+		<title>Features</title>
+		
+
+		<!-- <link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script> -->
+	</head>
+	<body>
+		<nav>
+			<div class="container">
+				<div class="flex">
+					<div class="img-wrapper">
+						<h3>Counselling System</h3>
+						<!-- <img src="static/css/images/logo.svg" alt="logo" /> -->
+					</div>
+
+					<button class="hamburger" id="hamburger">
+						<img
+							class="open"
+							src="static/css/images/icon-hamburger.svg"
+							alt="icon-hamburger"
+						/>
+						<img class="close" src="static/css/images/icon-close.svg" alt="icon-close" />
+					</button>
+
+					<ul id="menu">
+						<li><a href="{{url_for('firstpagecopy')}}">Home</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a class="btn btn-reverse" href="{{url_for('pro')}}">View Profile</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<header>
+			<div class="container">
+				<div class="flex align-start reverse-mobile">
+					<div>
+						<h1 class="line-top">
+							Creating a great career choice for you
+						</h1>
+						<p>
+							Get your perfect college according to your CET percentile,
+							Now no more confusion to choose which college and branch to
+							choose
+						</p>
+
+						<button class="btn"><a href="{{url_for('getstartedforques')}}">See Your's</a>
+							
+						</button>
+					</div>
+
+					<div>
+						<img
+							src="static/css/car3.jpg"
+							alt="intro"
+							class="ivan-from-peru"
+						/>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="container">
+			<h2 class="line-top line-violet">
+				We’re different
+			</h2>
+			<div class="flex">
+				<div class="tile">
+					<img src="static/css/images/icon-snappy-process.svg" alt="snappy" />
+					<h3>
+						Snappy Process
+					</h3>
+					<p>
+						The system saves time for students 
+						by providing a list of top 1-2 colleges
+						that offer the recommended branch of engineering, 
+						eliminating the need for manual 
+						research and investigation.
+
+					</p>
+				</div>
+
+				<div class="tile">
+					<img src="static/css/images/icon-affordable-prices.svg" alt="prices" />
+					<h3>
+						Accurate
+					</h3>
+					<p>
+						The system uses machine learning techniques
+						and data analytics to make accurate predictions
+						about the preferred branch of engineering, 
+						minimizing errors and uncertainties.
+
+					</p>
+				</div>
+
+				<div class="tile">
+					<img src="static/css/images/icon-people-first.svg" alt="people" />
+					<h3>
+						Personalized recommendations
+					</h3>
+					<p> The system generates personalized recommendations
+						based on the student's interests and exam scores,
+						helping them make informed decisions about their 
+						academic and career paths.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="container bg-violet">
+			<div class="flex">
+				<div>
+					<h2>
+						Find more about us
+					</h2>
+				</div>
+
+				<button class="btn">
+					<a href="{{url_for('mlmodel')}}">More About us</a>
+					 
+				</button>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="flex border-bottom">
+					<div>
+						<h3>Counselling System</h3>
+						<!-- <img src="static/css/images/logo.svg" alt="logo" /> -->
+					</div>
+
+					<ul class="flex">
+						<li>
+							<a href="#">
+								<img src="static/css/images/icon-facebook.svg" alt="facebook" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="static/css/images/icon-twitter.svg" alt="twitter" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="static/css/images/linkedin.svg" alt="linkedin" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="static/css/images/icon-instagram.svg" alt="instagram" />
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="flex align-start">
+					
+					<div>
+						<h4>Help me</h4>
+						<ul>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Terms of use</a></li>
+							<li><a href="#">Privacy policy</a></li>
+							<li><a href="#">Cookies</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h4>Contact</h4>
+						<ul>
+							
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Live chat</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h4>Others</h4>
+						<ul>
+							<li><a href="{{url_for('fans')}}">Careers</a></li>
+							<li><a href="#">Licenses</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script>
+			const hamburger = document.getElementById('hamburger');
+			const menu = document.getElementById('menu');
+
+			hamburger.addEventListener('click', () => {
+			hamburger.classList.toggle('show');
+			menu.classList.toggle('show');
+			});
+		</script>
+	</body>
+</html>

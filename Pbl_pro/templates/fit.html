@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Media Queries</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/fit1.css')}}">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+
+ 
+
+  
+
+
+</head>
+<style>
+  footer {
+  position:sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: hsl(243, 87%, 12%);
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+  /* footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: hsl(243, 87%, 12%);
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+} */
+  footer {
+	background-color: hsl(243, 87%, 12%);
+	color: #fff;
+	padding: 50px 0;
+}
+
+footer ul {
+	list-style-type: none;
+}
+
+footer ul li {
+	margin-bottom: 20px;
+}
+
+footer .social-media {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+footer .circle {
+	border: 1px solid #fff;
+	border-radius: 50%;
+	color: #fff;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+	height: 40px;
+	width: 40px;
+	text-decoration: none;
+}
+
+footer p {
+	text-align: right;
+}
+  
+/*   
+  footer {
+    
+    align-self:flex-end;
+    text-align: center;
+    padding:0%;
+    background-color:transparent;
+    color: white;
+  } */
+</style>
+
+<body class="bg-purple">
+            
+  <div class="stars">
+      <div class="custom-navbar">
+          <div class="brand-logo">
+              <ul>
+                <li><a href="#" target="_blank"><h1>Counselling System</h1></a></li>
+
+              </ul>
+          </div>
+          <div class="navbar-links">
+              <ul>
+                <li><a href="{{url_for('firstpage')}}" target="_self">Home</a></li>
+                <li><a href="#" target="_blank">About</a></li>
+                <li><a href="{{url_for('feature')}}" target="_self">Features</a></li>
+                <li><a href="{{url_for('login')}}" class="btn-request" target="_self">LOGIN</a></li>
+              </ul>
+          </div>
+          
+          
+      </div>
+            
+
+      <div class="central-body1">
+        <p><b>Welcome to Counselling System <br> Where u will be rightly guided <br> towards your career </b></p>
+      </div>
+      <div class="central-body">
+        <a href="{{url_for('getstarted')}}" class="btn-go-home" target="_self"><span>GET STARTED</span></a>
+      </div>
+      
+    </div>
+    <!-- <footer>
+      <nav class="nav">
+        <h4 class="sm-header">Follow us on</h4>
+        <div class="line"></div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><i class="fab fa-google-plus-g"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><i class="fab fa-dribbble"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </footer> -->
+      
+     
+    
+        <!-- <button>helooppppppppppppp</button> -->
+<!-- <div>
+                    <nav class="nav">
+                        <h4 class="sm-header">Follow us on</h4>
+                        <div class="line"></div>
+                        <ul class="nav-list">
+                          <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fab fa-google-plus-g"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fab fa-dribbble"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fab fa-linkedin-in"></i></a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>  -->
+  
+      
+
+
+
+    
+
+</body>
+
+</html>

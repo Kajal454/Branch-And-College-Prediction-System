@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Engineering Branch Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #333;
+            font-size: 48px;
+            margin-top: 50px;
+            text-align: center;
+        }
+        p {
+            color: #666;
+            font-size: 24px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 24px;
+            margin-top: 50px;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            width: 200px;
+            margin: 0 auto;
+        }
+        .button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <h1>Engineering Branch Quiz</h1>
+    <p>Welcome to the Engineering Branch Quiz. Click the button below to begin the quiz.</p>
+    <a href="{{ url_for('quiz') }}" class="button">Start Quiz</a>
+</body>
+</html>
